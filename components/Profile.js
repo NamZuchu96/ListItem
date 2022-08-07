@@ -1,10 +1,12 @@
 import { View,Text } from "react-native"
 import styleCSS from "../StyleCSS/StyleCSS"
 
-const Profile = ()=>{
+const Profile = ({navigation})=>{
     return (
         <View style={styleCSS.container}>
-            <Text>Profile</Text>
+            <Text
+            onPress={()=>navigation.popToTop()}
+            >Profile</Text>
         </View>
     )
 }

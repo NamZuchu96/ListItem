@@ -1,10 +1,12 @@
 import { View,Text } from "react-native"
 import styleCSS from "../StyleCSS/StyleCSS"
 
-const Login = ()=>{
+const Login = ({navigation})=>{
     return (
         <View style={styleCSS.container}>
-            <Text>Login</Text>
+            <Text
+            onPress={()=>navigation.navigate(`Profile`)}
+            >Login</Text>
         </View>
     )
 }

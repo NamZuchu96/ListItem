@@ -1,10 +1,12 @@
 import { View,Text } from "react-native"
 import styleCSS from "../StyleCSS/StyleCSS"
 
-const Home = ()=>{
+const Home = ({navigation})=>{
     return (
         <View style={styleCSS.container}>
-            <Text >Home</Text>
+            <Text 
+            onPress={()=>navigation.navigate(`Login`)}
+            >Home</Text>
         </View>
     )
 }
