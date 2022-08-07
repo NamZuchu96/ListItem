@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "ListItem",
+    "slug": "ListItem",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
