@@ -130,5 +130,50 @@ const Login = ({navigation})=>{
 }
 export default Login
 ```
-# Step8.7 Nesting avigators (Click từ Login nằm trong Stack Navigation chuyển đến 1 Stack khác mà Stack này có chứa Tab Navigator)
+# Step8.7 Nesting avigators (Click từ Login nằm trong Stack Navigation chuyển đến 1 Stack khác mà Stack này có chứa Tab Navigator) -> Chưa làm, cần học
 Link: https://reactnavigation.org/docs/nesting-navigators#:~:text=Version%3A%206.x-,Nesting%20navigators,-Nesting%20navigators%20means
+# Step8.8 Cách sử dụng vector icon
+Link : https://www.npmjs.com/package/react-native-vector-icons
+# Step8.8.1 Cài đặt package
+```
+npm i react-native-vector-icons
+```
+# Step8.8.2 Click vào link để cài đặt: 
+https://www.npmjs.com/package/react-native-vector-icons#:~:text=Homepage-,github.com/oblador/react%2Dnative%2Dvector%2Dicons,-Weekly%20Downloads
+# Step8.8.3 Do thằng ios nó cần cài đặt Info.plist Fonts nên sẽ mở Xcode workspace của dự án -> Tạo NewGroup Fonts 
+# Step8.8.4 Vô phần node_modules/react_native_vector_icons rồi tìm Fonts -> Reveal in Finder -> copy hết kéo sang Fonts của Xcode workspace
+![](2022-08-08-08-41-20.png)
+# Step8.8.5 Chọn Info.plist rồi Chọn Fonts provided by application -> add hết bằng cách copy paste từng file 
+# Step8.8.6 Về lại iterm cd tới ios Chạy lệnh:
+```
+pod install
+```
+# Step8.8.7 Về lại file muốn cài icon
+Search react-native-vector-icons directory 
+
+
+Search name của icon muốn add vào -> Chú ý name này là name của property name 
+
+
+Mục mà nó hiển thị mình đặt tên là Icon + tên của mục. 
+![](2022-08-08-09-03-16.png)
+```
+import { View,Text } from "react-native"
+import styleCSS from "../StyleCSS/StyleCSS"
+import IconEntypo from 'react-native-vector-icons/Entypo'
+const Login = ({navigation})=>{
+    return (
+        <View style={styleCSS.container}>
+
+            <IconEntypo name="game-controller" size="50"></IconEntypo>
+            <Text
+            onPress={()=>navigation.navigate(`Home`)}
+            >Login</Text>
+        </View>
+    )
+}
+export default Login
+```
+
+
+

@@ -5,7 +5,7 @@ const Home = ({navigation})=>{
     return (
         <View style={styleCSS.container}>
             <Text 
-            onPress={()=>navigation.navigate(`Login`)}
+            onPress={()=>navigation.navigate(`Profile`)}
             >Home</Text>
         </View>
     )
