@@ -144,6 +144,8 @@ https://www.npmjs.com/package/react-native-vector-icons#:~:text=Homepage-,github
 # Step8.8.4 Vô phần node_modules/react_native_vector_icons rồi tìm Fonts -> Reveal in Finder -> copy hết kéo sang Fonts của Xcode workspace
 ![](2022-08-08-08-41-20.png)
 # Step8.8.5 Chọn Info.plist rồi Chọn Fonts provided by application -> add hết bằng cách copy paste từng file 
+<img width="694" alt="image" src="https://user-images.githubusercontent.com/110547247/183324138-8e85418d-438e-4054-b533-551e2032d7d7.png">
+
 # Step8.8.6 Về lại iterm cd tới ios Chạy lệnh:
 ```
 pod install
