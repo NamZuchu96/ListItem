@@ -80,7 +80,7 @@ export default Profile
 # Flow của Navigation qua mô hình 
 ![](2022-08-08-06-42-03.png)
 # Flow qua code
-![](2022-08-08-06-44-37.png)
+![](2022-08-08-07-14-32.png)
 ```
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
