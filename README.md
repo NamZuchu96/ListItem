@@ -82,6 +82,31 @@ export default Profile
 # Flow qua code
 ![](2022-08-08-06-44-37.png)
 ```
+import { StatusBar } from 'expo-status-bar';
+import React from 'react';
+import {  Text, View } from 'react-native';
+import styleCSS from './StyleCSS/StyleCSS';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Home from './components/Home';
+import Login from './components/Login';
+import Profile from './components/Profile';
+
+const Stack = createNativeStackNavigator()
+export default function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name='Home' component={Home} options={{headerShown:false}} />
+        <Stack.Screen name='Login' component={Login} />
+        <Stack.Screen name='Profile' component={Profile} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
+
+```
+```
 options={{headerShown:false}} 
 ```
 headerShown để ẩn title của các Stack trong navigation bar
@@ -103,3 +128,5 @@ const Login = ({navigation})=>{
 }
 export default Login
 ```
+# Step8.7 Nesting avigators (Click từ Login nằm trong Stack Navigation chuyển đến 1 Stack khác mà Stack này có chứa Tab Navigator)
+Link: https://reactnavigation.org/docs/nesting-navigators#:~:text=Version%3A%206.x-,Nesting%20navigators,-Nesting%20navigators%20means
