@@ -112,6 +112,8 @@ options={{headerShown:false}}
 headerShown để ẩn title của các Stack trong navigation bar
 # Step8.6 Click vào view để điều hướng với Stack
 Trong () của 1 component sử dụng JSX truyền vào 1 props tên là navigation của NavigationContainer để điều hướng
+
+
 Link các thuộc tính của navigation: https://reactnavigation.org/docs/navigation-prop#:~:text=The%20functions%20are%3A-,navigation,-replace%20%2D%20replace%20the
 ```
 import { View,Text } from "react-native"
